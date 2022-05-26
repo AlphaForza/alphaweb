@@ -1,0 +1,167 @@
+.app__navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.app__navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__navbar-menu-title {
+  font-size: .8rem;
+  color: var(--bg-color);
+  background-color: var(--light-color);
+  border-radius: 5px;
+  padding: .4rem 1rem;
+  margin-right: 5rem;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.app__navbar-menu-title:hover {
+  background-color: transparent;
+  color: var(--light-color);
+}
+
+@media screen and (max-width: 450px) {
+  .app__navbar-menu-title {
+    margin-left: 2rem;
+  }
+}
+
+.app__navbar-menu-list {
+  list-style: none;
+}
+
+@media screen and (max-width: 820px) {
+  .app__navbar-menu-list {
+    display: none;
+  }
+}
+
+.app__navbar-menu-list-item {
+  margin-right: 2.5rem;
+}
+
+.app__navbar-menu-list-item a {
+  text-decoration: none;
+  color: var(--low-color);
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.app__navbar-menu-list-item a:hover {
+  color: var(--light-color);
+}
+
+@media screen and (max-width: 820px) {
+  .app__navbar-btn {
+    display: none;
+  }
+}
+
+.app__navbar-btn a {
+  padding: 1rem 2rem;
+  background-color: var(--green-color);
+  color: #fff;
+  text-decoration: none;
+  font-size: .8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.app__navbar-btn a:hover {
+  background-color: var(--light-color);
+  color: var(--bg-color);
+}
+
+.app__navbar .app__navbar-hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 820px) {
+  .app__navbar .app__navbar-hamburger {
+    display: none;
+  }
+}
+
+.app__navbar .app__navbar-hamburger .menu-open {
+  font-size: 3rem;
+  color: var(--green-color);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app__navbar .app__navbar-hamburger-wrapp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app__navbar .app__navbar-hamburger-wrapp svg {
+  color: var(--light-color);
+  font-size: 3rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.app__navbar .app__navbar-hamburger-wrapp .app__navbar-hamburger-list-item {
+  margin: 2rem 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+.app__navbar .app__navbar-hamburger-wrapp .app__navbar-hamburger-list-item a {
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 2rem;
+}
+/*# sourceMappingURL=Navbar.css.map */

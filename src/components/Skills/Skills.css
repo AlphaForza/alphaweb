@@ -1,0 +1,88 @@
+.app__skills {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__skills .head-text-skills {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  font-size: 5rem;
+  color: #fff;
+  opacity: .03;
+}
+
+@media screen and (max-width: 450px) {
+  .app__skills .head-text-skills {
+    display: none;
+  }
+}
+
+.app__skills-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.app__skills-wrapper h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.app__skills-wrapper .p-text {
+  width: 70%;
+  margin: 2rem 0;
+}
+
+.app__skills-wrapper .app__skills-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.app__skills-wrapper .app__skills-card-item {
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.app__skills-wrapper .app__skills-card-item h3 {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  margin: .2rem 0;
+}
+
+.app__skills-wrapper .app__skills-card-item p {
+  color: var(--low-color);
+  margin: .2rem 0;
+  font-size: .9rem;
+  text-align: center;
+}
+/*# sourceMappingURL=Skills.css.map */

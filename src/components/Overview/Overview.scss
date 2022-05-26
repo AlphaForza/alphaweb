@@ -1,0 +1,78 @@
+.app__overview{
+    position: relative;
+    .head-text-overview{
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        font-size: 5rem;
+        color: #fff;
+        opacity: .03;
+
+        @media screen and (max-width: 450px){
+           display: none;
+        }
+    }
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &-text{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        @media screen and (max-width: 450px){
+            align-items: center;
+        }
+
+        .p-text{
+            width: 60%;
+            margin: 1rem 0;
+
+            @media screen and (max-width: 450px){
+                text-align: center;
+            }
+        }
+
+        &-partOne{
+            h3{
+                color: var(--light-color);
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+            .app__overview-card{
+                display: flex;
+                align-items: center;
+
+                .p-text{
+                    margin-left: 1rem;
+
+                    @media screen and (max-width: 450px){
+                        text-align: left;
+                    }
+                }
+                .icon{
+                    svg{
+                        color: #fff;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+
+    }
+    &-image{
+        background-image: url('../../assets/headerBgImg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        flex:1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}

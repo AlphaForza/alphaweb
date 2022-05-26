@@ -1,0 +1,91 @@
+.app__project{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .head-text-header{
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        font-size: 5rem;
+        color: #fff;
+        opacity: .03;
+    
+        @media screen and (max-width: 450px){
+           display: none;
+        }
+    }
+
+
+    &-wrapper{
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        @media screen and (max-width: 1100px){
+            flex-direction: column;
+        }
+
+
+        &-text{
+            width: 30%;
+            @media screen and (max-width: 1100px){
+                width: 100%;
+            }
+            .head-text{
+                font-size: 2rem;
+            }
+            .p-text{
+                margin: 1.5rem 0;
+            }
+            .list-item{
+                display: flex;
+                flex-direction: column;
+
+                div{
+                    display: flex;
+                    align-items: center;
+                    margin: .5rem 0;
+                    cursor: pointer;
+                    svg{
+                        color: var(--low-color);
+                        font-size: 1.5rem;
+                        margin-right: .5rem;
+                    }
+                    p{
+                        color: var(--low-color);
+                    }
+
+                    svg:hover, p:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &-image{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            width: 70%;
+
+            @media screen and (max-width: 1100px){
+                width: 100%;
+                justify-content: center;
+            }
+
+            img{
+                @media screen and (max-width: 450px){
+                    width: 100%;
+                }
+                margin: 1rem;
+            }
+        }
+    }
+    
+}
